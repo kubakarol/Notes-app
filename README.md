@@ -12,7 +12,7 @@ This application was developed as part of a test task for a software engineering
 
 - Configure the database: Set up a connection to MongoDB in the server.js file.
 
-- Start the server: Run node server.js to start the backend server.
+- Start the server: Run 'node server.js' to start the backend server.
 
 - Run the client: Open index.html in your web browser.
 
