@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+  </head>
+  <body>
+    <div id="app">
+      <h2>Notes App</h2>
+      <input type="text" name="title" v-model="title" placeholder="Title" />
+      <input type="text" name="text" v-model="text" placeholder="Text" />
+      <button @click="addNote">Add Note</button>
+      <div v-for="(note, index) in notes" :key="index">
+        <h3>{{ note.title }}</h3>
+        <p>{{ note.text }}</p>
+        <button @click="deleteNote(index)">Delete</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
