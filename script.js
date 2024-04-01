@@ -84,7 +84,6 @@ const app = Vue.createApp({
       this.text = note.text;
     },
     updateNoteInDatabase(note) {
-      console.log('Updating note with ID:', note._id);
       fetch(`http://localhost:5500/notes/${note._id}`, {
         method: 'PUT',
         headers: {
